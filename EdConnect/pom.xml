@@ -1,0 +1,60 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.rthings.connected.server</groupId>
+  <artifactId>connected-server</artifactId>
+  <packaging>pom</packaging>
+  <version>1.0-SNAPSHOT</version>
+  <name>ConnectedWs</name>
+
+
+     <repositories>
+<repository>
+<id>JBoss</id>
+<name>JBoss</name>
+<url>https://repository.jboss.org/nexus/content/groups/public-jboss/</url>
+</repository>
+</repositories>
+
+
+
+  <properties>
+    <version.jboss.bom>8.2.1.Final</version.jboss.bom>
+	<version.wildfly>9.0.0.Alpha1</version.wildfly>
+	<version.compiler.plugin>3.1</version.compiler.plugin>
+<version.ear.plugin>2.10</version.ear.plugin>
+<version.ejb.plugin>2.3</version.ejb.plugin>
+<version.surefire.plugin>2.16</version.surefire.plugin>
+<version.war.plugin>2.5</version.war.plugin>
+<version.testng.plugin>6.8.8</version.testng.plugin>
+<version.log4j.plugin>1.2.17</version.log4j.plugin>
+<version.javax.plugin>7.0</version.javax.plugin>
+<version.wildfly.maven.plugin>1.0.2.Final</version.wildfly.maven.plugin>
+   <version.jboss.spec.javaee.7.0>1.0.3.Final</version.jboss.spec.javaee.7.0>
+   <version.wildfly.maven.plugin>1.0.2.Final</version.wildfly.maven.plugin>
+	<version.war.plugin>2.5</version.war.plugin>
+	<version.jboss.spec.javaee.7.0>1.0.3.Final</version.jboss.spec.javaee.7.0>
+
+</properties>
+
+<dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.jboss.spec</groupId>
+                <artifactId>jboss-javaee-7.0</artifactId>
+                <version>${version.jboss.spec.javaee.7.0}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+ 
+ 
+ 
+ <modules>
+ <module>ConnectEd</module>
+ <module>ConnectedPersistence</module>
+ <module>ConnectedWs</module>
+ </modules>
+ 
+</project>
