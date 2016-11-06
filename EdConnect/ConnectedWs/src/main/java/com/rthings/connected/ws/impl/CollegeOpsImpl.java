@@ -24,7 +24,10 @@ public class CollegeOpsImpl implements CollegeOps {
 			CollegeAbout about= new CollegeAbout();
 			about.setCollegeId("svpcet"+i);
 		about.setDesc("chu chu chu chuchu chu chu chu chu chu chuchu chu chuchuchu chu chu chu chu chu chu chu chu chu chu chu chu chu chu chu chu "+i);
+		if(i<5)
 		about.setRating(i);
+		else
+			about.setRating(i-5);
 		abouts.add(about);
 		}
 		Gson gson= new Gson();
