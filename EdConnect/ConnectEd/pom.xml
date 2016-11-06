@@ -30,14 +30,6 @@
  <version>1.0-SNAPSHOT</version>
 <scope>compile</scope>
 </dependency>
-
-<dependency>
-  <groupId>com.rthings.connected</groupId>
-  <artifactId>ConnectedPersistence</artifactId>
- <version>1.0-SNAPSHOT</version>
-<scope>compile</scope>
-</dependency>
-
 <dependency>
 <groupId>org.jboss.resteasy</groupId>
 <artifactId>resteasy-jaxrs</artifactId>
